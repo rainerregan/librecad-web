@@ -187,12 +187,28 @@ footer{
     section,header,footer{
     	width: 75%;
     }
+    p{
+    	font-size: 15px;
+    }
+    h3{
+    	font-size: 15px;
+    }
+    header h3{
+	font-size: 15px;
+}	
+section div h1{
+	font-size: 25px;
+}
     /*
     div#center ul li{
 		padding: 5px;
 	}
-	section #right ul li{
-		padding: 5px;
-	}
 	*/
+	section #right ul li{
+		font-size: 10px;
+		padding: 20px;
+	}
+	div#center ul li{
+		font-size: 12px;
+	}
 }
