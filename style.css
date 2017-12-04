@@ -19,11 +19,14 @@ header{
 }
 header div h3{
 	margin-right: 50px;
+	font-size: 1vw;
+}
+header div a img{
+	max-width: 100%;
 }
 header div img{
 	margin:10px;
 	padding-right: 10px;
-	size: 50%;
 	max-width: 100%;
 }
 a{
