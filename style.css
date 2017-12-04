@@ -1,87 +1,36 @@
+/*<----------------------------------All Starts here------------------------------->*/
 body{
 	padding: 0;
 	margin: 0;
 	font-family: sans-serif;
 	background-image: url('back.png');
 	height: 100%;
-	/*
-	background-color: #f0f0f2;
-	background-color: -moz-linear-gradient(top, #f0f0f2 0%, #7a8b9f 30%); 
-	background-color: -webkit-linear-gradient(top, #f0f0f2 0%,#7a8b9f 30%); 
-	background-color: linear-gradient(to bottom, #f0f0f2 0%,#7a8b9f 30%); 
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f2', endColorstr='#7a8b9f',GradientType=0 );
-	*/
-	background: linear-gradient(to bottom, white, #808080 100%);
-
-}
-body:before{
-	background-color: #7A8B9F;
+	background: linear-gradient(to bottom, #328cc1, #0b3c5d 100%);
 }
 header{
-	background: #00795f;
+	background: #0b3c5d;
 	color: #ffffffff;
 	text-align: left;
-	padding: 20px 0 20px 40px;
-	width: 1500px;
+	padding: 10px;
+	width: 75%;
 	margin: auto;
 	overflow: hidden;
+	border-radius: 10px;
+}
+header div h3{
+	margin-right: 50px;
+}
+header div img{
+	margin:10px;
+	padding-right: 10px;
+	size: 50%;
+	max-width: 100%;
 }
 a{
 	color: inherit;
 	text-decoration: none;
 }
-section #right ul{
-
-	color: white;
-	padding: 0;
-	overflow: hidden;
-	display: block; 
-	width: auto;
-	margin: auto;
-	margin-top: 0;
-}
-section #right ul li{
-	background-color: #43A286;
-	display: block;
-	width: auto;
-	padding: 20px 20px 20px 20px;
-	text-align: center;
-	margin: 10px;
-}
-section #right ul li:hover{
-	background-color: #399077;
-	cursor: pointer;
-}
-header nav ul{
-	background-color: #43A286;
-	color: white;
-	padding: 0;
-	overflow: hidden;
-	display: inline-block; 
-	width: auto;
-	margin: auto;
-}
-header nav ul li{
-	display: inline-block;
-	width: auto;
-	padding: 20px 20px 20px 20px;
-}
-header nav ul li:hover{
-	background-color: #399077;
-	cursor: pointer;
-}
-nav{
-	padding: 0px 50px 0 50px;
-}
-section{
-	line-height: 1.5em;
-	font-size: 0.9em;
-	width: 1460px;
-	margin: auto;
-	padding: 40px;
-	background-color: #80808019;
-	height: 1000px;
-}
+/*<----------------------------------DIVs------------------------------->*/
 div {
 	margin: 0;
 	margin-top: 10px;
@@ -93,14 +42,11 @@ div#foot h1,div#foot p{
 	font-family: sans-serif;
 	margin-top: 20px;
 }
-div#left h1{
-	margin-top: 0;
-}
-div#center h1{
+div#left h1, div#center h1{
 	margin-top: 0;
 }
 div#center ul{
-	background-color: #43A286;
+	background-color: #1d2731;
 	color: white;
 	padding: 0;
 	overflow: hidden;
@@ -109,93 +55,129 @@ div#center ul{
 	margin: auto;
 }
 div#center ul li{
+	background-color: #1d2731;
 	display: block;
 	width: auto;
-	padding: 20px 20px 20px 20px;
+	padding: 20px;
+	margin:auto;
 }
 div#center ul li:hover{
-	background-color: #399077;
+	background-color: #d9b310;
 	cursor: pointer;
 }
+/*<----------------------------------Text------------------------------->*/
 h3{
 	margin: auto;
-	vertical-align: top;
-	margin-top: 15px;
+	vertical-align: center;
+	
 	font-family: cursive;
-}
-section div h1{
-	font-size: 40px;
-	font-family: sans-serif;
 }
 p{
 	max-width: 80%;
-	text-align: inherit;
-	margin: 0;
-	font-size: 20px;
+	text-align: center;
+	margin: auto;
+	font-size: 1.5vw;
 	line-height: 1.5em;
-	font-family: cursive;
+	font-family: sans-serif;
 }
+/*<----------------------------------SECTION------------------------------->*/
+section{
+	line-height: 1.5em;
+	font-size: 0.9em;
+	width: 75%;
+	margin: 20px auto;
+	background-color: #328cc1;
+	height: 100%;
+	text-align: center;
+	padding: 10px;
+	border-radius: 10px;
+}
+section #right ul{
+	background-color: #1d2731;
+	color: white;
+	padding: 0;
+	overflow: hidden;
+	display: block; 
+	width: auto;
+	margin: auto;
+}
+section #right ul li{
+	display: block;
+	width: auto;
+	padding: 20px;
+	text-align: center;
+	margin: 0px;
+}
+section #right ul li:hover{
+	background-color: #d9b310;
+	cursor: pointer;
+}
+section div h1{
+	font-size: 3vw;
+	font-family: sans-serif;
+	line-height: 1.5em;
+}
+
+/*<----------------------------------Foots------------------------------->*/
 footer{
-	background-color: #333;
-	margin: 0;
-	padding: 40px;
+	background-color: #1d2731;
+	color: #d9b310;
+	padding: 10px;
+	font-size: 0.6em;
+	width: 1500px;
+	margin:auto;
 }
-footer div{
-	text-align: left;
-}
-/*IDs START HERE*/
-#left {
-    width: 30%;
-    background-color: #C0C0C064;
-    padding: 40px;
-    text-align: left;
-    border: 4px dashed #007F0E;
-    box-shadow: 5px 5px 10px #888888;
-    float: left;
-    margin-left: 30px;
-}
-#center {
-    width: 30%;
-    background-color: #C0C0C064;
-    padding: 40px;
-    text-align: left;
-    border: 4px dashed #007F0E;
-    box-shadow: 5px 5px 10px #888888;
-    float: left;
-    margin-left: 20px;
-}
-#right {
-    width: 10%;
-    background-color: #C0C0C064;
-    padding: 40px;
-    text-align: left;
-    border: 4px dashed #007F0E;
-    box-shadow: 5px 5px 10px #888888;
-    float: left;
-    margin-left: 20px;
-}
-#right h1{
-	font-size: 20px;
-}
-#bottomleft{
-	max-width: 25%;
-	float: left;
-	height: auto;
-}
-#bottomcenter{
-	margin-left: 5%;
-	margin-right: 5%;
-	max-width: 40%;
-	float: left;
-	height: auto;
-}
-#bottomright{
-	max-width: 25%;
+/*<----------------------------------Others------------------------------->*/
+input{
 	float: right;
-	height: auto;
+	margin: 20px;
 }
-#foot{
-	height: 500px;
-	font-size: 10px;
-	line-height: 1.5em;
+/*<----------------------------------Ids------------------------------->*/
+#left, #center, #right {
+    width: 75%;
+    background-color: #d9b310;
+    color: #0b3c5d;
+    padding: 40px;
+    text-align: center;
+    float: center;
+    margin: 20px auto;
 }
+#nav{
+	width: 75%;
+	list-style: none;
+	margin: 10px auto;
+	background-color: #1d2731;
+	padding: 10px;
+	text-align: center;
+	border-radius: 10px;
+}
+#nav a li{
+	
+	text-align: center;
+	margin-top: 10px;
+	margin: auto;
+	padding: 5px 20px 5px 20px;
+	color: white;
+	border-radius: 10px;
+	background-color: #1d2731;
+	border: 2px dashed #d9b310;
+	display:inline-block;
+}
+#nav a {
+	margin-top: 10px;
+	text-align:center; /* fixed width */
+	text-decoration:none; 
+}
+#nav li:hover{
+	background-color: #328cc1;
+	cursor: pointer;
+}
+/*<----------------------------------Every Journey comes to end :D------------------------------->*/
+/*
+@media screen and (max-width: 520px) {
+    #nav a li {
+    	display: block;
+    	margin-top: 20px;
+    }
+}
+*/
