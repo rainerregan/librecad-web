@@ -1,4 +1,4 @@
-/*<----------------------------------All Starts here------------------------------->*/
+/*<----------------------------------HTML,Body------------------------------->*/
 html{
 	padding: 0;
 	margin: 0;
@@ -6,18 +6,20 @@ html{
 	min-width:300px;
 	max-width: 100%;
 }
+html,body{
+	min-height: 100%;
+}
 body{
-	height: 100%;
 	font-family: sans-serif;
 	background-image: url('back.png');
 	background: linear-gradient(to bottom, #ffffffff, #AFD3E8 100%);
 }
+/*<----------------------------------Header------------------------------->*/
 header{
 	background: #0b3c5d;
 	color: #ffffffff;
 	padding: 10px;
 	width: 50%;
-	margin: 0 auto 0 auto;
 	position: relative;
 	top: -20px;
 	overflow: hidden;
@@ -37,40 +39,14 @@ header img{
 	height: auto;
 	max-width: 100%;
 }
-a{
-	color: inherit;
-	text-decoration: none;
+header,section,footer{
+	width: 75%;
+	margin: 0 auto;
 }
 /*<----------------------------------DIVs------------------------------->*/
 div {
 	margin: 10px;
 	border-radius: 10px;
-}
-
-div#left h1, div#center h1{
-	margin-top: 0;
-}
-div#center ul{
-	background-color: #1d2731;
-	color: white;
-	padding: 0;
-	overflow: hidden;
-	display: block; 
-	width: auto;
-	margin: auto;
-	font-size: 1vw;
-
-}
-div#center ul li{
-	background-color: #1d2731;
-	display: block;
-	width: auto;
-	padding: 10px;
-	margin:auto;
-}
-div#center ul li:hover{
-	background-color: #d9b310;
-	cursor: pointer;
 }
 /*<----------------------------------Text------------------------------->*/
 h3{
@@ -86,19 +62,51 @@ p{
 	line-height: 1.5em;
 	font-family: sans-serif;
 }
+a{
+	color: inherit;
+	text-decoration: none;
+}
 /*<----------------------------------SECTION------------------------------->*/
 section{
 	line-height: 1.5em;
 	font-size: 0.9em;
-	width: 50%;
-	margin: 0 auto;
 	background-color: #328cc1;
 	height: 100%;
 	text-align: center;
 	padding: 10px;
 	border-radius: 10px;
 }
-section #right ul{
+section h1{
+	font-size: 3vw;
+	font-family: sans-serif;
+	line-height: 1.5em;
+}
+/*left is the top, and right is bottom*/
+section #top h1, section #center h1{
+	margin-top: 0;
+}
+section #center ul{
+	background-color: #1d2731;
+	color: white;
+	padding: 0;
+	overflow: hidden;
+	display: block; 
+	width: auto;
+	margin: auto;
+	font-size: 1vw;
+}
+section #center ul li{
+	background-color: #1d2731;
+	display: block;
+	width: auto;
+	padding: 10px;
+
+}
+section #center ul li:hover{
+	background-color: #d9b310;
+	cursor: pointer;
+}
+section #bottom1 ul{
 	background-color: #1d2731;
 	color: white;
 	padding: 0;
@@ -106,8 +114,10 @@ section #right ul{
 	display: block; 
 	width: auto;
 	height: 100%;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
-section #right ul li{
+section #bottom1 ul li{
 	display: block;
 	width: auto;
 	padding: 20px;
@@ -115,14 +125,9 @@ section #right ul li{
 	font-size: 1vw;
 	height: 100%;
 }
-section #right ul li:hover{
+section #bottom1 ul li:hover{
 	background-color: #d9b310;
 	cursor: pointer;
-}
-section div h1{
-	font-size: 3vw;
-	font-family: sans-serif;
-	line-height: 1.5em;
 }
 /*<----------------------------------Foots------------------------------->*/
 footer{
@@ -132,23 +137,57 @@ footer{
 	font-size: 0.6em;
 	position: relative;
 	bottom: -10px;
-	width: 50%;
-	margin:auto;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 }
 /*<----------------------------------Others------------------------------->*/
+.modal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('loading.gif') 
+                50% 50% 
+                no-repeat;
+}
 
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+    display: block;
+}
 /*<----------------------------------Ids------------------------------->*/
-#left, #center, #right {
+#top, #center, #bottom1 {
     width: 75%;
     background-color: #d9b310;
     color: #0b3c5d;
-    padding: 40px;
+    padding: 20px;
     text-align: center;
     float: center;
-    margin: 20px auto;
+    margin: 10px auto;
 }
+#top{
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+#center{
+	border-radius: 0;
+}
+#bottom1{
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+}
+/*<----------------------------------Nav------------------------------->*/
 /* NAV
 #nav{
 	width: 75%;
@@ -181,34 +220,18 @@ footer{
 	cursor: pointer;
 }
 */
-/*<----------------------------------Every Journey comes to end :D------------------------------->*/
+/*<------------------------------------------------------------------------------>*/
 
 @media screen and (min-width: 240px) and (max-width: 1024px) {
-    section,header,footer{
-    	width: 75%;
-    }
-    p{
-    	font-size: 15px;
-    }
-    h3{
-    	font-size: 15px;
-    }
-    header h3{
-	font-size: 15px;
-}	
-section div h1{
-	font-size: 25px;
-}
-    /*
-    div#center ul li{
-		padding: 5px;
+    p, header h3{
+		font-size: 15px;
+	}	
+	section h1{
+		font-size: 25px;
 	}
-	*/
-	section #right ul li{
-		font-size: 10px;
+	section #bottom1 ul li, section #center ul li{
+		font-size: 15px;
 		padding: 20px;
 	}
-	div#center ul li{
-		font-size: 12px;
-	}
 }
+/*<------------------------------------------------------------------------------>*/

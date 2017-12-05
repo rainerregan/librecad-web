@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	<div class="se-pre-con"></div>
 	<!--Remove this tag if needed
 	<nav>
 		<ul id="nav">
@@ -28,7 +29,7 @@
 		</div>
 	</header>
 	<section>
-		<div id="left">
+		<div id="top">
 			<h1>What is <strong>LibreCAD</strong>?</h1>
 			<hr>
 			<p>
@@ -50,7 +51,7 @@
 				<a href="http://www.youtube.com/results?search_query=librecad&oq=librecad"><li>Video Tutorial</li></a>
 			</ul>
 		</div>
-		<div id="right">
+		<div id="bottom1">
 			<h1>DOWNLOADS<br/></h1>
 			<hr/>
 			<ul>
@@ -61,44 +62,16 @@
 		</div>
 	</section>
 	<footer>
-		Copyright Should go here :D
+		@Copyright Should go here
 	</footer>
-	<!--Just some foot here-->
-	<!--
-	<footer>
-		<div id="foot">
-			<div id="bottomleft">
-					<h1>ABOUT US<br/></h1>
-					<hr>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-										consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</div>
-			<div id="bottomcenter">
-				<h1>ABOUT US<br/></h1>
-				<hr>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</div>
-			<div id="bottomright">
-					<h1>ABOUT US<br/></h1>
-					<hr>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-										consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</div>
-		</div>
-	</footer>
--->
+	<div class="modal"><!-- Place at bottom of page --></div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	<script>
+		$body = $("body");
+		$(document).on({
+    		ajaxStart: function() { $body.addClass("loading");},
+     		ajaxStop: function() { $body.removeClass("loading");}    
+     	});
+     </script>
 </body>
 </html>
